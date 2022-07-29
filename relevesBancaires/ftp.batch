@@ -1,0 +1,7 @@
+#! /bin/bash
+
+sftp -P PORT LINK << EOF
+cd success_recept
+get * /home/magestionpro/scripts/relevesBancaires/recuperation
+exit
+EOF

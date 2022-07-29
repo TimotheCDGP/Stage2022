@@ -1,0 +1,9 @@
+#! /bin/bash
+
+sftp -P PORT URL << EOF
+cd emission
+lcd /home/magestionpro/scripts/generateur_xml/generated
+put $1
+exit
+EOF
+
